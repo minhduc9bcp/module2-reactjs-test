@@ -1,0 +1,95 @@
+:root {
+  --card-color: rgb(34 31 91);
+  --bg-icon-color: rgb(57 56 145);
+  --btn-color: rgb(56 57 150);
+  --bg-input-color: rgb(19 17 54);
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  position: relative;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.cardContainer {
+  width: 480px;
+  height: 520px;
+}
+
+.form {
+  margin-top: 10rem;
+  padding: 2rem;
+  background-color: var(--card-color);
+}
+
+.form .form-item {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.form .form-item input[type='text'] {
+  width: 100%;
+  padding: 12px;
+  margin: 5px;
+  background-color: var(--bg-input-color);
+  border: none;
+  color: white;
+}
+
+.form .form-item input[type='number'] {
+  width: 40px;
+}
+
+.form-item>span {
+  position: absolute;
+  padding: 3px;
+  top: 6px;
+  right: 6px;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: var(--bg-icon-color);
+}
+
+.form button {
+  width: 100%;
+  margin: 2rem 0 0 0;
+  padding: 10px;
+  font-size: 18px;
+  background-color: var(--btn-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.toast {
+  margin: 10px 0;
+  padding: 18px;
+  position: absolute;
+  top: 0;
+  width: 480px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  color: black;
+  /* display: none; */
+}
+
+.toast-close {
+  position: absolute;
+  padding: 3px;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
